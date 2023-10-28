@@ -1,5 +1,6 @@
+package Lason2;
 import java.util.Scanner;
-public class L2T2 {
+public class Task2 {
     public static void main(String[] agrs) {
         Scanner point = new Scanner(System.in);
         System.out.println("Ведіть значення х від точки 1");

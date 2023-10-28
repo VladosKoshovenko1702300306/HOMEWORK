@@ -1,4 +1,5 @@
-public class L6T2 {
+package Lason6;
+public class Task2 {
     public static void main(String[] args) {
         int[][] triangle = new int[5][];
         triangle[0] = new int[1];

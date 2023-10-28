@@ -1,5 +1,6 @@
+package Lason2;
 import java.util.Scanner;
-public class L2T3 {
+public class Task3 {
     public static void main(String[] ags) {
         Scanner number = new Scanner(System.in);
         System.out.println("Введіть ціле чсло");

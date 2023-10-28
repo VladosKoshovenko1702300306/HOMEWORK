@@ -1,6 +1,7 @@
+
 package Lason3;
 import java.util.Scanner;
-public class L3T2 {
+public class Task2 {
     public static void main (String [] ags) {
         System.out.println("Введіть фразу");
         Scanner scan = new Scanner(System.in);  String a = scan.nextLine();

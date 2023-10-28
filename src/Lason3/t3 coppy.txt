@@ -2,7 +2,7 @@ package Lason3;
 import java.util.Scanner;
 public class L3T3{
     public static void main (String [] ags) {
-        System.out.println("Р’РІРµРґС–С‚СЊ С„СЂР°Р·Сѓ");
+        System.out.println("Введіть фразу");
         Scanner scan = new Scanner(System.in);  String a = scan.nextLine();
         int words =0;
         if (a.length() !=0){
@@ -15,12 +15,7 @@ public class L3T3{
             }
 
         }
-        System.out.println("Р’Рё РІРІРµР»Рё С‚Р°РєСѓ РєС–Р»СЊРєС–СЃС‚СЊ СЃР»С–РІ"+" "+ (words));
-
-
-
-
-
-
-                }
+        System.out.println("Ви ввели таку кількість слів"+" "+( "x) (words));
+    }
             }
+            

@@ -1,5 +1,6 @@
+package Lason2;
 import java.util.Scanner;
-public class L2T4 {
+public class Task4 {
     public  static void main (String [] ags) {
         Scanner num = new Scanner(System.in);
         System.out.println("Введіть перше число"); int a = num.nextInt();
