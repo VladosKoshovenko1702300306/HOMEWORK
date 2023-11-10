@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main (String[] ads){
-        Scanner scan = new Scanner(System.in);
+        Scanner scan                                                                                            = new Scanner(System.in);
         System.out.println("Введіть радіус кола:");
         double radius = scan.nextDouble();
         circle circle = new circle(radius);
@@ -28,11 +28,5 @@ public class Main {
         System.out.println("Периметер трикутника " + Tringl.perimeter() );
         System.out.println("Площа трикутника " + Tringl.area());
         scan.close();
-
-
-
-
-
-
          }
     }
