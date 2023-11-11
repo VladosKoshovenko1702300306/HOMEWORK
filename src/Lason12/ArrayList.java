@@ -40,7 +40,7 @@ public class ArrayList <T>{
     boolean isConst (T element) {
         return indexoff(element) !=1;
     }
-    public static void main  (String[] agsr){
+    public static void  main  (String[] agsr){
         Scanner scan = new Scanner(System.in);
         System.out.println("Введіть розмір масиву");
         int size = scan.nextInt();
