@@ -1,5 +1,4 @@
 package ua.koshovenko.hw3;
-package Lason3;
 
 import java.util.Scanner;
 
