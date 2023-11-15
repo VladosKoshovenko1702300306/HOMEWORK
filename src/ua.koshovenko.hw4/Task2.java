@@ -1,37 +1,46 @@
 package ua.koshovenko.hw4;
 import java.util.Random;
+import java.util.Scanner;
 public class Task2 {
-    public static void main (String[] args){
-        int Arry = 1000;
-        int[] randArry = new int [Arry];
+    public static void main(String[]agsr){
+        int arraySize = 1000;
+        int[] randArray=genRandarray(arraySize);
+        int firstCount = countFirst(randArray);
+        System.out.println("Масив згенерованно: ");
+        printArray(randArray);
+        System.out.println("Кількість простих в масиві: "+ firstCount);
+    }
+    private static int[] genRandarray(int size ){
+        int[] array = new int[size];
         Random rand = new Random();
-        for (int i = 0; i<Arry; i++){
-            randArry[i]= rand.nextInt(1000);
+        for (int i=0; i< size; i++){
+            array[i]=rand.nextInt(1000);
         }
-        int first = 0;
-
-        for (int num : randArry){
-            if (isFirst (num)){
-                first ++;
+        return array;
+    }
+    private  static int countFirst(int[] array){
+        int count = 0;
+        for (int num: array){
+            if (isFirst(num)){
+                count ++;
             }
         }
-        System.out.println("Масив згенеровано");
-        for (int num : randArry){
-            System.out.println(num + " ");
-        }
-        System.out.println();
-        System.out.println("Кількість простих чисел в масиві: "+ first);
+        return count;
     }
-    public static boolean isFirst (int num){
-        if (num < 2){
+    private static boolean isFirst (int num){
+        if (num<2){
             return false;
         }
         for (int i = 2; i<= Math.sqrt(num); i++){
-            if (num% i == 0 ){
+            if (num % i==0 ){
                 return false;
             }
         }
         return true;
-
+    }
+    private static void printArray (int [] array){
+        for (int num: array){
+            System.out.println(num + " ");
+        }
     }
 }
